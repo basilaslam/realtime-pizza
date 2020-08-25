@@ -7,9 +7,13 @@ const path = require('path')
 const app = express()
 const PORT = process.env.PORT || 3300
 
+//Assets
+app.use(express.static('public'))
+
 app.get('/', (req,res) => {
-    res.render('home')
+    res.render('home.ejs')
 })
+
 
 //
 
@@ -19,5 +23,5 @@ app.set('view engine', 'ejs')
 
 
 app.listen(PORT,() => {
-    console.log(`listening on port xy ${PORT}`)
+    console.log(`listening on port ${PORT}`)
 })

@@ -1,0 +1,2 @@
+[+] Create directory strecture
+[+] Create a NPM and install all dependancies
